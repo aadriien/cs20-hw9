@@ -2,61 +2,61 @@
     {
         "title": "Title: Under the Sea",
         "artist": "Artist(s): Alan Menken, Howard Ashman",
-        "genre": ["pop", "reggae"],
+        "genre": ["Genre(s): pop", " reggae"],
         "releaseYear": "Release Year: 1989"
     },
     {
         "title": "Title: You've Got a Friend in Me",
         "artist": "Artist(s): Randy Newman",
-        "genre": ["country", "pop"],
+        "genre": ["Genre(s): country", " pop"],
         "releaseYear": "Release Year: 1995"
     },
     {
         "title": "Title: Go the Distance",
         "artist": "Artist(s): Alan Menken",
-        "genre": ["pop"],
+        "genre": ["Genre(s): pop"],
         "releaseYear": "Release Year: 1997"
     },
     {
         "title": "Title: A Whole New World",
         "artist": "Artist(s): Alan Menken",
-        "genre": ["pop"],
+        "genre": ["Genre(s): pop"],
         "releaseYear": "Release Year: 1992"
     },
     {
         "title": "Title: I Wan'na Be Like You",
         "artist": "Artist(s): Robert Sherman, Richard Sherman",
-        "genre": ["jazz"],
+        "genre": ["Genre(s): jazz"],
         "releaseYear": "Release Year: 1967"
     },
     {
         "title": "Title: Colors of the Wind",
         "artist": "Artist(s): Alan Menken",
-        "genre": ["pop"],
+        "genre": ["Genre(s): pop"],
         "releaseYear": "Release Year: 1995"
     },
     {
         "title": "Title: Heigh-Ho",
         "artist": "Artist(s): Frank Churchill, Larry Morey",
-        "genre": ["pop"],
+        "genre": ["Genre(s): pop"],
         "releaseYear": "Release Year: 1937"
     },
     {
         "title": "Title: I'll Make a Man Out of You",
         "artist": "Artist(s): Matthew Wilder, David Zippel",
-        "genre": ["pop"],
+        "genre": ["Genre(s): pop"],
         "releaseYear": "Release Year: 1998"
     },    
     {
         "title": "Title: Friend Like Me",
         "artist": "Artist(s): Alan Menken",
-        "genre": ["show tune"],
+        "genre": ["Genre(s): show tune"],
         "releaseYear": "Release Year: 1992"
     },    
     {
         "title": "Title: Bibbidi-Bobbidi-Boo",
         "artist": "Artist(s): Al Hoffman, Mack David, Jerry Livingston",
-        "genre": ["show tune"],
+        "genre": ["Genre(s): show tune"],
         "releaseYear": "Release Year: 1950"
     }    
 ]
