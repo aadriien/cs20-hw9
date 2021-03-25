@@ -58,6 +58,36 @@
         "artist": "Artist(s): Al Hoffman, Mack David, Jerry Livingston",
         "genre": ["Genre(s): show tune"],
         "releaseYear": "Release Year: 1950"
+    },    
+    {
+        "title": "Title: I Just Can't Wait to Be King",
+        "artist": "Artist(s): Elton John, Tim Rice",
+        "genre": ["Genre(s): worldbeat", " rock'n'roll"],
+        "releaseYear": "Release Year: 1994"
+    },
+    {
+        "title": "Title: You'll Be in My Heart",
+        "artist": "Artist(s): Phil Collins",
+        "genre": ["Genre(s): pop rock"],
+        "releaseYear": "Release Year: 1999"
+    },
+    {
+        "title": "Title: The Bells of Notre Dame",
+        "artist": "Artist(s): Alan Menken",
+        "genre": ["Genre(s): musical theatre"],
+        "releaseYear": "Release Year: 1996"
+    },
+    {
+        "title": "Title: Immortals",
+        "artist": "Artist(s): Fall Out Boy",
+        "genre": ["Genre(s): pop rock"],
+        "releaseYear": "Release Year: 2014"
+    },
+    {
+        "title": "Title: Beauty and the Beast",
+        "artist": "Artist(s): Howard Ashman, Alan Menken",
+        "genre": ["Genre(s): show tune"],
+        "releaseYear": "Release Year: 1991"
     }    
 ]
 
