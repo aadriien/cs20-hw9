@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JSON Song List</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script language="javascript">
+        function chooseGenre() {     
+            // check which genre choice the user has selected   
+            var genre = $("#type option:selected").text();            
+            getSongs(genre);
+        }
+        
+        
+        function getSongs(genre) {
+            // get access to the JSON file's data            
+            $.get("https://aadriien.github.io/hw9/JSONSongList.json", 
+            function( data ) {
+                
+                if (genre == "all") {
+                    getAll(data);
+                }
+                else {                    
+                    var sString = "";                        
+                    // cycle through each song to check for genre match         
+                    data.forEach(function(song) {    
+                        
+                        genreType1 = song.genre[0].substring(10);
+                        
+                        // check second item in genre array, if applicable                    
+                        numGenres = song.genre.length;   
+                        if (numGenres == 2) {
+                            genreType2 = song.genre[1].substring(1);
+                        }
+                        else {
+                            genreType2 = "";
+                        }
+    
+                        if (genreType1 == genre || genreType2 == genre) {                            
+                            sString += song.title + "<br/>"
+                                     + song.artist + "<br/>" 
+                                     + song.genre + "<br/>" 
+                                     + song.releaseYear + "<br/>"
+                                     + "<br/><br/>";                
+                        }                    
+                    })   
+                    // display result on screen
+                    document.getElementById("result").innerHTML = sString;                 
+                }
+            })
+        }
+        
+        
+        function getAll(data) {
+            // display raw string (serialized data) on screen
+            var rawStr = JSON.stringify(data);
+            rawStr += "<br/><br/><br/><br/><br/>";
+
+            var sString = "";   
+            // display all songs     
+            data.forEach(function(song) {                  
+                sString += song.title + "<br/>"
+                         + song.artist + "<br/>" 
+                         + song.genre + "<br/>" 
+                         + song.releaseYear + "<br/>"
+                         + "<br/><br/>";
+                         
+             })
+             // combine raw string with organized list of (all) songs
+             var fullString = rawStr + sString;
+             document.getElementById("result").innerHTML = fullString;
+        }    
+    </script>    	    
+</head>
+
+<body>      
+    <div id="form">
+        <!-- create drop down select box to filter by genre -->
+        <label for="type">Genre:</label>
+        <select name="type" id="type"> 
+            <option>all</option>
+            <option>pop</option> 
+            <option>jazz</option> 
+            <option>country</option> 
+            <option>reggae</option> 
+            <option>show tune</option> 
+            <option>worldbeat</option> 
+            <option>rock'n'roll</option> 
+            <option>pop rock</option> 
+            <option>musical theatre</option> 
+        </select> 
+        
+        <!-- provide button to update screen based on selection -->
+        <input type="button" value="Filter" onclick="chooseGenre()">         
+    </div> 
+    
+    <!-- display results on screen -->
+    <p id="result"> &nbsp; </p>    
+</body>
+</html>
+    
+    
+    
+    
